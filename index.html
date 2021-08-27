@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ders Programı Oluşturucu</title>
+	<link rel="stylesheet" href="main.css">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
+    <script src="fileSaver.js"></script>
+    <script src="canvas-toBlob.js"></script>
+    <script src="html2canvas.js"></script>
+	<script src="main.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+	<div id="printableplace" class="vstack">
+		<table>
+			<div class="hstack">
+				<h2 id="studentName" contenteditable="true">Öğrenci İsmi</h2>
+				<h2 id="studentClass" contenteditable="true">Sınıf</h2>
+			</div>
+			<tr class="firsttr">
+				<td contenteditable="true">Günler</td>
+				<td>Pazartesi</td>
+				<td>Salı</td>
+				<td>Çarşamba</td>
+				<td>Perşembe</td>
+				<td>Cuma</td>
+				<td>Cumartesi</td>
+				<td>Pazar</td>
+			</tr>
+			<tr>
+				<td contenteditable="true"></td>
+				<td contenteditable="true"></td>
+				<td contenteditable="true"></td>
+				<td contenteditable="true"></td>
+				<td contenteditable="true"></td>
+				<td contenteditable="true"></td>
+				<td contenteditable="true"></td>
+				<td contenteditable="true"></td>
+			</tr>
+			<tr>
+				<td contenteditable="true"></td>
+				<td contenteditable="true"></td>
+				<td contenteditable="true"></td>
+				<td contenteditable="true"></td>
+				<td contenteditable="true"></td>
+				<td contenteditable="true"></td>
+				<td contenteditable="true"></td>
+				<td contenteditable="true"></td>
+			</tr>
+			<tr>
+				<td contenteditable="true"></td>
+				<td contenteditable="true"></td>
+				<td contenteditable="true"></td>
+				<td contenteditable="true"></td>
+				<td contenteditable="true"></td>
+				<td contenteditable="true"></td>
+				<td contenteditable="true"></td>
+				<td contenteditable="true"></td>
+			</tr>
+			<tr>
+				<td contenteditable="true"></td>
+				<td contenteditable="true"></td>
+				<td contenteditable="true"></td>
+				<td contenteditable="true"></td>
+				<td contenteditable="true"></td>
+				<td contenteditable="true"></td>
+				<td contenteditable="true"></td>
+				<td contenteditable="true"></td>
+			</tr>
+		</table>
+		<div id="buttons" class="hstack">
+			<div class="container">
+				<button onclick="exportDoc()">Dışa Aktar</button>
+				<!--
+				<button class="buttonmargin">Yazdır</button>
+				-->
+			</div>
+			<button onclick="resetDocument()">Sıfırla</button>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;600&display=swap');
+
+* {
+	font-family: "Raleway", system-ui, "Helvetica Neue", Helvetica, Arial;
+	font-weight: 500;
+	box-sizing: border-box;
+}
+
+body {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.firsttr td {
+	background-color: rgb(227, 89, 40);
+	color: white;
+	font-weight: 600;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+td {
+	margin: 0;
+	padding: 5px;
+	border: 1px solid black;
+	width: 12.5%;
+	height: 70px;
+}
+
+tr {
+	text-align: center;
+}
+
+.vstack {
+	width: 70%;
+	display: flex;
+	flex-direction: column;
+}
+
+.hstack {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.hstack button {
+	margin: 0;
+	margin-top: 50px;
+	padding: 10px;
+	outline: none;
+	border: none;
+	background-color: rgb(227, 89, 40);
+	font-size: 20px;
+	font-weight: 500;
+	color: white;
+	cursor: pointer;
+}
+
+.buttonmargin {
+	margin-left: 20px!important;
+}
+
+.container {
+	display: flex;
+	flex-direction: row;
+}
